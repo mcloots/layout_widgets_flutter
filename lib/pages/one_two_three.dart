@@ -9,24 +9,17 @@ class OneTwoThreePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("One Two Three"),
       ),
-      body: Material(
+      body: const Material(
         color: Colors.deepPurple,
         child: Column(
           children: [
-            const Center(
+             Center(
               child: Text(
                 "One Two Three!",
                 textDirection: TextDirection.ltr,
                 style: TextStyle(color: Colors.white, fontSize: 36.0),
               ),
-            ),
-            Center(
-              child: ElevatedButton(
-                  child: const Text("Go back"),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  }),
-            ),
+            )
           ],
         ),
       ),

@@ -20,6 +20,34 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(color: Colors.white, fontSize: 36.0),
               ),
             ),
+            const Center(
+              child: Text("Multi-child layout widgets",
+              style: TextStyle(
+                backgroundColor: Colors.white,
+                color: Colors.black
+              ),),
+            ),
+            Center(
+              child: ElevatedButton(
+                  child: const Text("Column"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/column');
+                  }),
+            ),
+            Center(
+              child: ElevatedButton(
+                  child: const Text("Row"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/row');
+                  }),
+            ),
+            Center(
+              child: ElevatedButton(
+                  child: const Text("Gridview"),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/gridview');
+                  }),
+            ),
             Center(
               child: ElevatedButton(
                   child: const Text("One Two Three"),
